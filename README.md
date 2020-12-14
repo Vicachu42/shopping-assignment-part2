@@ -1,5 +1,5 @@
 # shopping-assignment-part2
 
-Starting with Frontend
+The bit where we do frontend
 
-I still haven't really finished the other project, so this will be a very loose sketch of what I want, and I'm making sure I can work with my server file.
+So far I'm in the beginning stages of html and css. I'm noticing that I keep going back to the same design as I had during the last examination of the first course. While this isn't a pure design task, I should think about switching it up a bit.
