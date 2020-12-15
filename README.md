@@ -2,7 +2,11 @@
 
 The bit where we do frontend
 
-Tuesday: 18:00
+Tuesday, 20:00
+-
+Design for both pages done. I've done some simpler bug testing, but the media queries seem to work just fine. Before starting otu I should run the html through a validator.
+
+Tuesday, 18:00
 -
 Design done with media queries on landing page. Now I need to design a shopping cart, either as an overlay or as a separate page.
 
