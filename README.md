@@ -15,3 +15,7 @@ Monday, 18:48
 Started working on media queries. The header is as good as done, and the next step will be to fix the flex on main. Footer will also need touching up. 
 
 But that's for tomorrow!
+
+Tuesday, 11:30
+-
+Some small changes here and there. This is mostly backup.

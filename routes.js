@@ -34,7 +34,6 @@ router.get('/carts', (request, response) => {
 });
 
 router.post('/carts/:id', (request, response) => {
-    console.log('Hej!');
     const productsID = Number(request.params.id);
     const data = database.get('products').find({id: productsID}).value();
     const cartsIndex = database.get('carts').find({id: productsID}).value();
