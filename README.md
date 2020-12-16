@@ -1,6 +1,10 @@
-# shopping-assignment-part2-electric-boogalo
+# shopping-assignment-part2-electric-boogaloo
 
 The bit where we do frontend
+
+Wednesday, 10:30
+-
+I've run my code through a validator, so the HTML is set to go. Next step is to write some mockup JS-code.
 
 Tuesday, 20:00
 -
