@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Wednesday, 13:40
+-
+I got the server to connect to my HTML and CSS, so it runs on my localhost. I've started creating values on my main.js, and the next step would be to create get and display functions.
+
 Wednesday, 10:30
 -
 I've run my code through a validator, so the HTML is set to go. Next step is to write some mockup JS-code.
