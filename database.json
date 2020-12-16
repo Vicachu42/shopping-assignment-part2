@@ -6,7 +6,7 @@
       "rank": "Yokozuna",
       "height": "192 cm",
       "weight": "151 kg",
-      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/a/a3/Hakuho_8.jpg/revision/latest/scale-to-width-down/340?cb=20200908220651",
+      "picture": "/images/hakuho.jpg",
       "vicsMessage": "I am the GOAT. Google me."
     },
     {
@@ -15,7 +15,7 @@
       "rank": "Ozeki",
       "height": "175 cm",
       "weight": "183 kg",
-      "picture": "https://lh3.googleusercontent.com/proxy/sRM35gP-quh98ahFlp99136wPYfP_a1TgYZn25E_PdjtmHgAIIJI4risOkp7PQAExBOnL3sYcEgGR3o9TmaWn5jyYgxwSrKS5i6856sjmQr0ySFUsDhB4g"
+      "picture": "/images/takakeisho.jpg"
     },
     {
       "id": 8,
@@ -23,7 +23,7 @@
       "rank": "Ozeki",
       "height": "187 cm",
       "weight": "174 kg",
-      "picture": "https://static.wikia.nocookie.net/sumowrestling/images/8/87/Asanoyama_5.jpg/revision/latest/scale-to-width-down/340?cb=20200829193452"
+      "picture": "/images/asanoyama.jpg"
     },
     {
       "id": 7,
@@ -31,7 +31,7 @@
       "rank": "Sekiwake",
       "height": "179 cm",
       "weight": "172 kg",
-      "picture": "https://displacedkansan.files.wordpress.com/2019/01/mitakeumihisashi.jpg?w=1280"
+      "picture": "/images/mitakeumi.jpg"
     },
     {
       "id": 6,
@@ -39,7 +39,7 @@
       "rank": "Sekiwake",
       "height": "184 cm",
       "weight": "163 kg",
-      "picture": "https://static.wixstatic.com/media/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_cb50712546424b4cb834518ac4a7e023~mv2.jpg"
+      "picture": "/images/takanosho.jpg"
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "rank": "Maegashira",
       "height": "180 cm",
       "weight": "129 kg",
-      "picture": "https://static.wixstatic.com/media/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_44da9e2ad3b14de7961a7bfc76d41cea~mv2.jpg"
+      "picture": "/images/wakatakakage.jpg"
     },
     {
       "id": 4,
@@ -55,7 +55,7 @@
       "rank": "Maegashira",
       "height": "175 cm",
       "weight": "131 kg",
-      "picture": "https://static.wixstatic.com/media/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_f4ac18cc022f47a182200a650eb5a970~mv2.jpg"
+      "picture": "/images/tobizaru.jpg"
     },
     {
       "id": 2,
@@ -63,7 +63,7 @@
       "rank": "Maegashira",
       "height": "192 cm",
       "weight": "175 kg",
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWtC7ZKu_R54hGU2_7Rv57PZW091qINpO0g&usqp=CAU"
+      "picture": "/images/tochinoshin.jpg"
     },
     {
       "id": 3,
@@ -71,7 +71,7 @@
       "rank": "Maegashira",
       "height": "169 cm",
       "weight": "92 kg",
-      "picture": "https://thegreenbrew.files.wordpress.com/2019/07/enho.jpg?w=685"
+      "picture": "/images/enho.jpg"
     },
     {
       "id": 1,
@@ -79,7 +79,7 @@
       "rank": "Maegashira",
       "height": "191 cm",
       "weight": "156 kg",
-      "picture": "https://static.wixstatic.com/media/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg/v1/fill/w_270,h_474,al_c,q_90/3e9c21_d4e6ec9f8f7b489ca76f94adf5240388~mv2.jpg"
+      "picture": "/images/kotoshoho.jpg"
     }
   ],
   "carts": []
