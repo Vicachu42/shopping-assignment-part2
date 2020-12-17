@@ -31,7 +31,8 @@ async function getCarts() {
 
 function displayProducts(item, index) {
     console.log('Object', item, index);
-    const wrestlerCard = document.createElement('p');
+    const wrestlerCard = document.createElement('div');
+    wrestlerCard.className += ' wrestler__cards';
 
     let productsPicture = document.createElement('img');
     productsPicture.src = item.picture;
@@ -50,11 +51,6 @@ function displayProducts(item, index) {
     addButton.className += ' add__product';
     addButton.innerHTML = 'Add to Cart';
     wrestlerCard.appendChild(addButton);
-
-    // addButton.setAttribute('id-code', item.id);
-
-    // addButton.innerHTML = 'Add to Cart';
-
 
     productsElement.appendChild(wrestlerCard);
 }

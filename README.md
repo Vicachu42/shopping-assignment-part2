@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 21:00
+-
+Because I can never just leave shit be. Started working on the CSS, but I should probably just stop. I'm waaaaaaaaaaaaaaaaaaay too tired for this.
+
 Thursday, 20:50
 -
 I seem to have found a method that works for me, so I'm sticking to it. I have now created a button (Yay!). 

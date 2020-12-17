@@ -140,6 +140,9 @@ p {
 }
 
 .wrestler__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     background-color: rgb(247, 239, 225);
     min-width: 260px;
     max-width: 280px;
@@ -147,6 +150,13 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.product__card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: green;
 }
 
 .product__pic {
