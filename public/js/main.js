@@ -1,8 +1,8 @@
 const productsURL = 'http://localhost:8000/api/products';
 const cartsURL = 'http://localhost:8000/api/carts';
 
-const productsElement = document.querySelector('wrestler__cards');
-const productsInCart = document.querySelector('cart__listing');
+const productsElement = document.querySelector('.wrestler__cards');
+const productsInCart = document.querySelector('.cart__listing');
 const cartNumber = document.querySelector('#cartNumber')
 
 let data = [];
@@ -12,9 +12,7 @@ async function getData() {
     try {
         const response = await fetch(productsURL);
         data = await response.json();
-        console.log(data);
-        return data;
-        // displayProducts();
+        data.forEach(displayProducts);
     } catch (error) {
         console.log('ERROR: I am a broken teapot', error);
     }
@@ -31,48 +29,31 @@ async function getCarts() {
     }
 }
 
-function displayProducts() {
-    productsElement.innerHTML = '';
+function displayProducts(item, index) {
+    console.log('Object', item, index);
+    const wrestlerCard = document.createElement('p');
 
-    if (data.length > 0) {
-        for (let i = 0; i < data.length; i++) {
-            let productInfo = document.createElement('li');
-            let productPictures = document.createElement('product__pic');
-            let addButton = document.createElement('add__product');
+    let productsPicture = document.createElement('img');
+    productsPicture.src = item.picture;
+    wrestlerCard.appendChild(productsPicture);
 
-            productInfo.innerHTML = data[i].shikona + data[i].rank;
-            // + data[i].height + data[i].weight + data[i].price;
+    let wrestlerName = document.createElement('p');
+    wrestlerName.className += ' shikona';
+    wrestlerName.innerHTML = item.shikona;
+    wrestlerCard.appendChild(wrestlerName);
 
-            const imagesURL = 'http://localhost:8000' + data[i].picture;
-            productPictures.setAttribute('src', imagesURL);
+    let wrestlerInfo = document.createElement('li');
+    wrestlerInfo.innerHTML = 'Rank: ' + item.rank + 'Height: ' + item.height + 'Weight: ' + item.weight + 'Price: ' + item.price;
+    wrestlerCard.appendChild(wrestlerInfo);
+    console.log(wrestlerInfo);
 
-            addButton.setAttribute('id-code', data[i].id);
-            addButton.innerHTML = 'Add to cart';
-            productInfo.append(addButton);
-            
-            productsElement.append(productInfo);
-            productInfo.appendChild(productPictures);
-
-            addButton.addEventListener('click', (event) => {
-                const code = event.target.getAttribute('id-code');
-                addButton.innerHTML = 'In Cart';
-                addtoCart(code);
-            });
-
-            console.log('Where the fuck is my tepot?!');
-        }
-    } else {
-        console.log('I can not find my fucking teapot!');
-
-        let node = document.createElement('li');
-        node.innerHTML = 'No result';
-        productsElement.append(node);
-    }
+    productsElement.appendChild(wrestlerCard);
 }
 
 getData();
+getCarts();
 
-displayProducts();
+
 
 
 
@@ -87,6 +68,5 @@ displayProducts();
 //     // console.log('Look for ', code);
 // }
 
-getCarts();
 
 // addToCart();

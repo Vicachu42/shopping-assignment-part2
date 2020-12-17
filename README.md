@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 20:25
+-
+FINALLY shit works! I had to go back to the UN-assigment to see how I did it there, and that method actually helped.
+
 Thursday, 18:45
 -
 Display still nog working -_-. FML.
