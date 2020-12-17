@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 11:30
+-
+I've started with the frontend JavaScript. So far I've managed access the products from the database and displayed them in the console. Next step is to display them in the html.
+
 Wednesday, 13:40
 -
 I got the server to connect to my HTML and CSS, so it runs on my localhost. I've started creating values on my main.js, and the next step would be to create get and display functions.
