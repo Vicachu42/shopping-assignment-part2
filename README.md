@@ -2,6 +2,11 @@
 
 The bit where we do frontend
 
+Thursday, 20:50
+-
+I seem to have found a method that works for me, so I'm sticking to it. I have now created a button (Yay!). 
+Something I need to ask Christopher tomorrow is how solve the id problem in my addTotCart function. One way to do it is "?id=", but it doesn't work like that for me. I'll have to find a solution, because it would be sad to have to walk back on that function just to make it work.
+
 Thursday, 20:25
 -
 FINALLY shit works! I had to go back to the UN-assigment to see how I did it there, and that method actually helped.

@@ -45,7 +45,16 @@ function displayProducts(item, index) {
     let wrestlerInfo = document.createElement('li');
     wrestlerInfo.innerHTML = 'Rank: ' + item.rank + 'Height: ' + item.height + 'Weight: ' + item.weight + 'Price: ' + item.price;
     wrestlerCard.appendChild(wrestlerInfo);
-    console.log(wrestlerInfo);
+
+    let addButton = document.createElement('button');
+    addButton.className += ' add__product';
+    addButton.innerHTML = 'Add to Cart';
+    wrestlerCard.appendChild(addButton);
+
+    // addButton.setAttribute('id-code', item.id);
+
+    // addButton.innerHTML = 'Add to Cart';
+
 
     productsElement.appendChild(wrestlerCard);
 }
