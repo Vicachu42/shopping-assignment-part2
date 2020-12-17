@@ -19,6 +19,18 @@ async function getData() {
     }
 }
 
+async function getCarts() {
+    try {
+        const response = await fetch(cartsURL);
+        const result = await response.json();
+        console.log(result);
+        cartNumber.innerHTML = result.length;
+    } catch (error) {
+        console.log('ERROR: I am an empty teapot', error);
+    }
+}
+
 getData();
+getCarts();
 
 // fetch (localhost:8000)

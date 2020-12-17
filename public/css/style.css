@@ -285,6 +285,10 @@ ul {
         justify-content: space-between;
     }
 
+    .header__basket {
+        margin-right: 0;
+    }
+
     .header__info {
         width: 100%;
         margin-top: 30px;
@@ -308,7 +312,9 @@ ul {
     .header__image {
         display: block;
         width: 50%;
-        margin: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
     }
 
     #header__pic {

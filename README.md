@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 11:45
+-
+Finished function to display products in cart. I might have to work on the designpart when it comes to the display on the shopping basket, but I'll save that for later.
+
 Thursday, 11:30
 -
 I've started with the frontend JavaScript. So far I've managed access the products from the database and displayed them in the console. Next step is to display them in the html.
