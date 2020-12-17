@@ -92,5 +92,15 @@
       "picture": "/images/kotoshoho.jpg"
     }
   ],
-  "carts": []
+  "carts": [
+    {
+      "id": 5,
+      "shikona": "Wakatakakage",
+      "rank": "Maegashira",
+      "height": "180 cm",
+      "weight": "129 kg",
+      "price": "&#165;500 000",
+      "picture": "/images/wakatakakage.jpg"
+    }
+  ]
 }

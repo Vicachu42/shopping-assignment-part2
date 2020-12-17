@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 18:45
+-
+Display still nog working -_-. FML.
+
 Thursday, 17:55
 -
 Lost and confused. I've been trying to display products on my main html-page, but I can't figure it out. I've tried console logging to pinpoint where I'm going wrong, and while it logs within the function, it doesn't log anything in my for loop och if statement. Doing backup, taking a break, then trying again -_-
