@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 17:55
+-
+Lost and confused. I've been trying to display products on my main html-page, but I can't figure it out. I've tried console logging to pinpoint where I'm going wrong, and while it logs within the function, it doesn't log anything in my for loop och if statement. Doing backup, taking a break, then trying again -_-
+
 Thursday, 12:25
 -
 I'm starting out with the displayProducts function, but have to take a natural break here. I also realised at this point that I forgot to include prices for my "products" in the last part of the assignment ><. I've dropped a message to Christoffer asking how to best amend the situation.
