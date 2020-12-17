@@ -30,6 +30,20 @@ async function getCarts() {
     }
 }
 
+function displayProducts() {
+    productsElement.innerHTML = '';
+
+    if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+            let productInfo = document.createElement('li');
+            let images = document.createElement('product__pic');
+            let addButton = document.createElement('add__product');
+
+            productInfo.innerHTML = data[i].shikona + data[i].rank + data[i].height + data[i].weight + data[i].price;
+        }
+    }
+}
+
 getData();
 getCarts();
 

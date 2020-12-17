@@ -149,6 +149,11 @@ p {
     margin-bottom: 1rem;
 }
 
+.product__pic {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 .add__product {
     background-color: red;
     color: white;
@@ -163,7 +168,7 @@ p {
 
 } */
 
-ul {
+li {
     list-style: none;
     padding: 0;
     font-family: 'M PLUS 1p', sans-serif;
@@ -211,10 +216,15 @@ ul {
     text-transform: uppercase;
 }
 
-.product__pic {
+.thumbnail__container {
     width: 25%;
     display: flex;
     justify-content: flex-end;
+}
+
+.thumbnail  {
+    width: 83px;
+    height: 120px;
 }
 
 
@@ -222,11 +232,6 @@ ul {
 #tester {
     width: 100%;
     margin-bottom: 1rem;
-}
-
-#testing2 {
-    width: 83px;
-    height: 120px;
 }
 /* Slut testkod */
 
@@ -324,7 +329,6 @@ ul {
     h1 {
         margin-top: 0;
     }
-
     
     .cart__display {
         width: 1000px;

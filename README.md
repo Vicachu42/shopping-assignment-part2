@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Thursday, 12:25
+-
+I'm starting out with the displayProducts function, but have to take a natural break here. I also realised at this point that I forgot to include prices for my "products" in the last part of the assignment ><. I've dropped a message to Christoffer asking how to best amend the situation.
+
 Thursday, 11:45
 -
 Finished function to display products in cart. I might have to work on the designpart when it comes to the display on the shopping basket, but I'll save that for later.
