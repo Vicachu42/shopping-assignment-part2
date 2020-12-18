@@ -94,41 +94,13 @@
   ],
   "carts": [
     {
-      "id": 5,
-      "shikona": "Wakatakakage",
+      "id": 4,
+      "shikona": "Tobizaru",
       "rank": "Maegashira",
-      "height": "180 cm",
-      "weight": "129 kg",
+      "height": "175 cm",
+      "weight": "131 kg",
       "price": "&#165;500 000",
-      "picture": "/images/wakatakakage.jpg"
-    },
-    {
-      "id": 10,
-      "shikona": "Hakuho",
-      "rank": "Yokozuna",
-      "height": "192 cm",
-      "weight": "151 kg",
-      "price": "&#165;1 000 000",
-      "picture": "/images/hakuho.jpg",
-      "vicsMessage": "I am the GOAT. Google me."
-    },
-    {
-      "id": 8,
-      "shikona": "Asanoyama",
-      "rank": "Ozeki",
-      "height": "187 cm",
-      "weight": "174 kg",
-      "price": "&#165;900 000",
-      "picture": "/images/asanoyama.jpg"
-    },
-    {
-      "id": 6,
-      "shikona": "Takanosho",
-      "rank": "Sekiwake",
-      "height": "184 cm",
-      "weight": "163 kg",
-      "price": "&#165;800 000",
-      "picture": "/images/takanosho.jpg"
+      "picture": "/images/tobizaru.jpg"
     }
   ]
 }

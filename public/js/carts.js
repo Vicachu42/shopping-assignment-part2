@@ -34,6 +34,11 @@ function displayCarts (item, index) {
     addButton.setAttribute('data-code', item.id);
     shoppingCart.appendChild(addButton);
 
+    addButton.addEventListener('click', (event) => {
+        const code = event.target.getAttribute('data-code');
+        deleteFromCarts(code);
+    });
+
     let thumbnailPictures = document.createElement('img');
     thumbnailPictures.className += ' thumbnail';
     thumbnailPictures.src = item.picture;
@@ -42,34 +47,13 @@ function displayCarts (item, index) {
     productsInCart.appendChild(shoppingCart);
 }
 
+async function deleteFromCarts (code) {
+    const updatedCarts = cartsURL + '/' + code;
+    console.log(updatedCarts);
 
-// function displayCarts(item, index) {
-//     console.log(item, index);
+    const response = await fetch(updatedCarts, {method: 'DELETE'});
+    const result = await response.json();
+    window.location.reload();
 
-//     const shoppingCart = document.createElement('div');
-//     shoppingCart.classname += (' cart__listing');
-//     // setAttribute
-
-//     // let productsPicture = document.createElement('img');
-//     // productsPicture.className += ' thumbnail';
-//     // productsPicture.src = item.picture;
-//     // shoppingCart.appendChild(productsPicture);
-
-//     productsInCart.appendChild(shoppingCart);
-// }
-
-
-
-// async function addToCart (code) {
-//     const updatedCarts = cartsURL + '?id=' + code;
-
-//     console.log(updatedCarts);
-
-//     const response = await fetch(updatedCarts, {method: 'POST'});
-//     const result = await response.json();
-
-//     // console.log('Look for ', code);
-// }
-
-
-// addToCart();
+    getCarts();
+}
