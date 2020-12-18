@@ -141,8 +141,9 @@ p {
 
 .wrestler__cards {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     background-color: rgb(247, 239, 225);
     min-width: 260px;
     max-width: 280px;
@@ -152,12 +153,12 @@ p {
     margin-bottom: 1rem;
 }
 
-.product__card {
+/* .product__card {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
     background-color: green;
-}
+} */
 
 .product__pic {
     width: 100%;
@@ -172,6 +173,7 @@ p {
     font-family:'M PLUS 1p', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
+    margin-top: 1rem;
 }
 
 /* .add__product:hover {

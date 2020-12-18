@@ -1,7 +1,7 @@
 const productsURL = 'http://localhost:8000/api/products';
 const cartsURL = 'http://localhost:8000/api/carts';
 
-const productsElement = document.querySelector('.wrestler__cards');
+const productsElement = document.querySelector('.main__display');
 const productsInCart = document.querySelector('.cart__listing');
 const cartNumber = document.querySelector('#cartNumber')
 
@@ -30,11 +30,13 @@ async function getCarts() {
 }
 
 function displayProducts(item, index) {
-    console.log('Object', item, index);
+    let displayIndex = index + 1;
     const wrestlerCard = document.createElement('div');
+    wrestlerCard.id = '#id' + displayIndex;
     wrestlerCard.className += ' wrestler__cards';
 
     let productsPicture = document.createElement('img');
+    productsPicture.className += ' product__pic';
     productsPicture.src = item.picture;
     wrestlerCard.appendChild(productsPicture);
 
@@ -44,7 +46,7 @@ function displayProducts(item, index) {
     wrestlerCard.appendChild(wrestlerName);
 
     let wrestlerInfo = document.createElement('li');
-    wrestlerInfo.innerHTML = 'Rank: ' + item.rank + 'Height: ' + item.height + 'Weight: ' + item.weight + 'Price: ' + item.price;
+    wrestlerInfo.innerHTML = 'Rank: ' + item.rank + '<br>' + 'Height: ' + item.height + '<br>' + 'Weight: ' + item.weight + '<br>' + 'Price: ' + item.price;
     wrestlerCard.appendChild(wrestlerInfo);
 
     let addButton = document.createElement('button');
