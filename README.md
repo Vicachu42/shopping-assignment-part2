@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Friday, 10:50
+-
+Fixed the design and mended some bug. Now to...idk, a shitload of other things.
+
 Thursday, 21:00
 -
 Because I can never just leave shit be. Started working on the CSS, but I should probably just stop. I'm waaaaaaaaaaaaaaaaaaay too tired for this.

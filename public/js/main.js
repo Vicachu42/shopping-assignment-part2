@@ -30,10 +30,11 @@ async function getCarts() {
 }
 
 function displayProducts(item, index) {
-    let displayIndex = index + 1;
+    console.log(item, index);
+
     const wrestlerCard = document.createElement('div');
-    wrestlerCard.id = '#id' + displayIndex;
     wrestlerCard.className += ' wrestler__cards';
+    wrestlerCard.setAttribute('wrestler-id', wrestler.id);
 
     let productsPicture = document.createElement('img');
     productsPicture.className += ' product__pic';
@@ -65,7 +66,7 @@ getCarts();
 
 
 // async function addToCart (code) {
-//     const updatedCarts = cartsURL + '1' + code;
+//     const updatedCarts = cartsURL + '?id=' + code;
 
 //     // console.log(updatedCarts);
 
