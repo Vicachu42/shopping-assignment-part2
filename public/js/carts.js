@@ -7,8 +7,6 @@ async function getCarts() {
         const response = await fetch(cartsURL);
         data = await response.json();
         data.forEach(displayCarts);
-        // displayCarts();
-        console.log(data);
     } catch (error) {
         console.log('ERROR: I am an empty teapot', error);
     }
@@ -17,29 +15,33 @@ getCarts();
 
 function displayCarts (item, index) {
     const shoppingCart = document.createElement('div');
-    shoppingCart.classname += (' cart__listing');
+    shoppingCart.className += ' cart__listing';
     shoppingCart.setAttribute('product-id', item.id);
 
-    // let thumbnailPictures = document.createElement('img');
-    // // productsPicture.className += ' thumbnail';
-    // thumbnailPictures.src = item.picture;
-    // shoppingCart.appendChild(thumbnailPictures);
-
     let wrestlerName = document.createElement('p');
+    wrestlerName.className += ' shikona';
     wrestlerName.innerHTML = item.shikona;
-    
     shoppingCart.appendChild(wrestlerName);
-    console.log(wrestlerName);
 
-    // let productPrice = document.createElement('p');
-    // productPrice.innerHTML = 'Price: ' + item.price;
-    // shoppingCart.appendChild(productsInCart);
-    // console.log(productPrice);
+    let productPrice = document.createElement('p');
+    productPrice.className += ' price__listing';
+    productPrice.innerHTML = 'Price: ' + item.price;
+    shoppingCart.appendChild(productPrice);
+
+    let addButton = document.createElement('button');
+    addButton.className += ' remove__product';
+    addButton.innerHTML = 'Remove from Cart';
+    addButton.setAttribute('data-code', item.id);
+    shoppingCart.appendChild(addButton);
+
+    let thumbnailPictures = document.createElement('img');
+    thumbnailPictures.className += ' thumbnail';
+    thumbnailPictures.src = item.picture;
+    shoppingCart.appendChild(thumbnailPictures);
 
     productsInCart.appendChild(shoppingCart);
 }
 
-// displayCarts();
 
 // function displayCarts(item, index) {
 //     console.log(item, index);

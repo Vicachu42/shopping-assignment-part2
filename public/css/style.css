@@ -153,12 +153,6 @@ p {
     margin-bottom: 1rem;
 }
 
-/* .product__card {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    background-color: green;
-} */
 
 .product__pic {
     width: 100%;
@@ -170,6 +164,7 @@ p {
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
+    height: 30px;
     font-family:'M PLUS 1p', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -210,6 +205,10 @@ li {
     box-sizing: border-box;
 }
 
+.cart__listing .shikona {
+    margin-top: 0;
+}
+
 .product__info {
     width: 75%;
 }
@@ -217,12 +216,13 @@ li {
 .price__listing {
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 0;  
 }
 
 .remove__product {
     padding: 5px 15px;
     border-radius: 20px;
+    height: 30px;
     font-family:'M PLUS 1p', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -235,8 +235,7 @@ li {
 }
 
 .thumbnail  {
-    width: 83px;
-    height: 120px;
+    height: 100%;
 }
 
 

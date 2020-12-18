@@ -1,5 +1,3 @@
-// import { displayCarts } from "./carts.js";
-
 const productsURL = 'http://localhost:8000/api/products';
 const cartsURL = 'http://localhost:8000/api/carts';
 
@@ -70,6 +68,5 @@ async function addToCarts (code) {
     const response = await fetch(updatedCarts, {method: 'POST'});
     const result = await response.json();
 
-    // displayCarts();
     getCarts();    
 }
