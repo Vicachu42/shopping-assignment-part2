@@ -2,6 +2,10 @@
 
 The bit where we do frontend
 
+Friday, 12:00
+-
+There are two js modules now...
+
 Friday, 10:50
 -
 Fixed the design and mended some bug. Now to...idk, a shitload of other things.
