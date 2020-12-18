@@ -1,3 +1,5 @@
+// import { displayCarts } from "./carts.js";
+
 const productsURL = 'http://localhost:8000/api/products';
 const cartsURL = 'http://localhost:8000/api/carts';
 
@@ -21,7 +23,6 @@ async function getCarts() {
     try {
         const response = await fetch(cartsURL);
         const result = await response.json();
-        cartNumber.innerHTML = result.length;
     } catch (error) {
         console.log('ERROR: I am an empty teapot', error);
     }
@@ -49,11 +50,26 @@ function displayProducts(item, index) {
     let addButton = document.createElement('button');
     addButton.className += ' add__product';
     addButton.innerHTML = 'Add to Cart';
+    addButton.setAttribute('data-code', item.id);
     wrestlerCard.appendChild(addButton);
+
+    addButton.addEventListener('click', (event) => {
+        const code = event.target.getAttribute('data-code');
+        addToCarts(code);
+    });
 
     productsElement.appendChild(wrestlerCard);
 }
 
 getData();
 
-getCarts();
+async function addToCarts (code) {
+    const updatedCarts = cartsURL + '/' + code;
+    console.log(updatedCarts);
+
+    const response = await fetch(updatedCarts, {method: 'POST'});
+    const result = await response.json();
+
+    // displayCarts();
+    getCarts();    
+}

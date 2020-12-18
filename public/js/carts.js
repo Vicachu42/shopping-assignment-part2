@@ -1,28 +1,45 @@
 const cartsURL = 'http://localhost:8000/api/carts';
 const productsInCart = document.querySelector('.cart__display');
-let cart = [];
+let data = [];
 
 async function getCarts() {
     try {
         const response = await fetch(cartsURL);
-        const result = await response.json();
-        cartNumber.innerHTML = result.length;
+        data = await response.json();
+        data.forEach(displayCarts);
+        // displayCarts();
+        console.log(data);
     } catch (error) {
         console.log('ERROR: I am an empty teapot', error);
     }
 }
 getCarts();
 
+function displayCarts (item, index) {
+    const shoppingCart = document.createElement('div');
+    shoppingCart.classname += (' cart__listing');
+    shoppingCart.setAttribute('product-id', item.id);
 
+    // let thumbnailPictures = document.createElement('img');
+    // // productsPicture.className += ' thumbnail';
+    // thumbnailPictures.src = item.picture;
+    // shoppingCart.appendChild(thumbnailPictures);
 
-// function displayCarts (item, index) {
-//     console.log('Fuuuuuuuuuuuuuuuuck this');
-//     // const shoppingCart = document.createElement('div');
-//     // shoppingCart.classname += (' cart__listing');
-//     // console.log(shoppingCart);
+    let wrestlerName = document.createElement('p');
+    wrestlerName.innerHTML = item.shikona;
+    
+    shoppingCart.appendChild(wrestlerName);
+    console.log(wrestlerName);
 
-//     // productsInCart.appendChild(shoppingCart);
-// }
+    // let productPrice = document.createElement('p');
+    // productPrice.innerHTML = 'Price: ' + item.price;
+    // shoppingCart.appendChild(productsInCart);
+    // console.log(productPrice);
+
+    productsInCart.appendChild(shoppingCart);
+}
+
+// displayCarts();
 
 // function displayCarts(item, index) {
 //     console.log(item, index);
